@@ -1,0 +1,114 @@
+.FormImc {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.FormImc > div,
+.FormImc label {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+/* .FormImc input {
+   max-width: 80px;
+   padding: 5px 10px;
+   text-align: center;
+   font-family: var(--font-default);
+   background-color: blue;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} */
+
+/* .calculate {
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: rgb(0, 183, 255);
+   color: #ffffff;
+   border: none;
+   border-radius: 20px;
+   font-family: var(--font-default);
+   font-weight: 600;
+   font-size: 0.9rem;
+   cursor: pointer;
+   transition: all .4s;
+}
+.calculate:hover {
+   background-color: rgb(0, 104, 145);
+   cursor: pointer;
+   transition: all .4s;
+} */
+
+.FormImc button {
+   appearance: none;
+   background-color: transparent;
+   border: 0.125em solid #1a1a1a;
+   border-radius: 0.9375em;
+   box-sizing: border-box;
+   color: #d8d8d8;
+   cursor: pointer;
+   display: inline-block;
+   font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: normal;
+   margin: 20px 0 0 0;
+   min-height: 3.75em;
+   min-width: 0;
+   outline: none;
+   padding: 5px 20px;
+   text-align: center;
+   text-decoration: none;
+   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   will-change: transform;
+}
+
+.FormImc button:disabled {
+   pointer-events: none;
+}
+
+.FormImc button:hover {
+   color: #fff;
+   background-color: #1a1a1a;
+   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+   transform: translateY(-2px);
+}
+
+.FormImc button:active {
+   box-shadow: none;
+   transform: translateY(0);
+}
+
+.FormImc input {
+   max-width: 190px;
+   background-color: #f5f5f5;
+   color: #242424;
+   padding: 0.15rem 0.5rem;
+   min-height: 40px;
+   border-radius: 4px;
+   outline: none;
+   border: none;
+   line-height: 1.15;
+   box-shadow: 0px 10px 20px -18px;
+}
+
+.FormImc input:focus {
+   border-bottom: 2px solid #006770;
+   border-radius: 4px 4px 2px 2px;
+}
+
+.FormImc input:hover {
+   outline: 1px solid lightgrey;
+}
