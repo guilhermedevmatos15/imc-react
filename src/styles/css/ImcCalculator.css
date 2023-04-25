@@ -1,7 +1,7 @@
 .ImcCalculator {
-   width: 90%; max-width: 500px; min-width: 300px;
+   width: 90%; max-width: 400px; min-width: 300px;
    padding: 30px;
-   background-color: black;
+   background-color: #272627;
    border-radius: 20px;
    text-align: center;
    display: flex;
@@ -11,14 +11,15 @@
    gap: 20px;
 }
 .ImcCalculator h1 {
-   color: #24bae7;
+   color: #1ea7b1;
    font-size: 2.3rem;
-   line-height: 2.5rem;
+   line-height: 2.7rem;
 }
 
 .ImcCalculator p:not(.result) {
+   margin-top: 10px;
    font-size: 0.9rem;
-   color: rgba(255, 255, 255, 0.623);
+   color: #ffffffe2;
 }
 
 

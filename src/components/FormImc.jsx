@@ -5,6 +5,10 @@ import React from 'react';
 // ? CSS
 import '../styles/css/FormImc.css';
 
+// ? Icons
+import { FaWeightHanging } from "react-icons/fa";
+import { FaRuler } from "react-icons/fa";
+
 // ? Images
 
 const FormImc = (props) => {
@@ -19,24 +23,32 @@ const FormImc = (props) => {
    return (
       <form className="FormImc">
          <div>
-            <label>
-               <span>Enter your weight (KG)</span>
-               <input 
+            <label htmlFor='input-weight'>Enter your weight</label>
+            <div className='input-field'>
+               <FaWeightHanging />
+               <input
                   type="number"
+                  name='input-weight'
+                  id='input-weight'
                   onChange={(e) => {setInputValueWeight(e.target.value)}}
-                  value={inputValueWeight}   
+                  value={inputValueWeight}
                />
-            </label>
+               <span className='marcation'>Kg</span>
+            </div>
          </div>
          <div>
-            <label>
-               <span>Enter your height (Meters)</span>
-               <input 
+         <label htmlFor='input-height'>Enter your height</label>
+            <div className='input-field'>
+               <FaRuler />
+               <input
                   type="number"
+                  name='input-height'
+                  id='input-height'
                   onChange={(e) => {setInputValueHeight(e.target.value)}}
-                  value={inputValueHeight}   
+                  value={inputValueHeight}
                />
-            </label>
+               <span className='marcation'>M</span>
+            </div>
          </div>
          <button 
             type="button"

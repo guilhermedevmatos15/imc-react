@@ -40,11 +40,11 @@ const ImcCalculator = () => {
             setMessageResult('Obesidade grau I');
          } else if (resultImc < 40) {
             setMessageResult('Obesidade grau II');
-         } else {
+         } else if (resultImc >= 40) {
             setMessageResult('Obesidade grau III');
          }
 
-         setShowResult(!showResult);
+         setShowResult(true);
       }
    }
 

@@ -5,4 +5,22 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   gap: 150px;
+}
+
+.Home img {
+   width: 50%; min-width: 150px; max-width: 300px;
+}
+
+
+@media (max-width: 960px) {
+   .Home img {
+      display: none;
+   }
+}
+
+@media (max-width: 600px) {
+   :root {
+      font-size: 14px;
+   }
 }
